@@ -10,34 +10,34 @@ public class TestJsonBean implements java.io.Serializable{
 	private static final long serialVersionUID = -1700915195107154313L;
 
 
-	private int AB;  // ！陷阱：当仅有一个大写字母时，会误输出为小写字母
-	private String b;
-	private float c;
+	private int AA;
+	private String B;  // ！陷阱：当仅有一个大写字母时，会误输出为小写字母
+	private double c = 0.6;  // 可以设置默认值
 	private boolean d;
 	private SubTestJsonBean sub;
 	private List<SubTestJsonBean> subs;
 	
-	public int getAB() {
-		return AB;
+	public int getAA() {
+		return AA;
 	}
 
-	public void setAB(int a) {
-		this.AB = a;
+	public void setAA(int a) {
+		this.AA = a;
 	}
 
 	public String getB() {
-		return b;
+		return B;
 	}
 
 	public void setB(String b) {
-		this.b = b;
+		this.B = b;
 	}
 
-	public float getC() {
+	public double getC() {
 		return c;
 	}
 
-	public void setC(float c) {
+	public void setC(double c) {
 		this.c = c;
 	}
 
