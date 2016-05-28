@@ -2,7 +2,13 @@ package java_json;
 
 import java.util.List;
 
-public class TestJsonBean {
+public class TestJsonBean implements java.io.Serializable{
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -1700915195107154313L;
+
 
 	private int AB;  // ！陷阱：当仅有一个大写字母时，会误输出为小写字母
 	private String b;

@@ -1,6 +1,10 @@
 package java_json;
 
-public class SubTestJsonBean {
+public class SubTestJsonBean implements java.io.Serializable {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -1363728982485326698L;
 	private int sub_i = 9;  // 可设置默认值
 	private boolean sub_b;
 	public SubTestJsonBean() {
