@@ -16,6 +16,7 @@ public class Main {
 		List<SubTestJsonBean> subs = new ArrayList<SubTestJsonBean>();
 		testJsonBean.setSubs(subs);
 		subs.add(sub);
+		subs.add(sub);
 		JSONObject jsonObject = JSONObject.fromObject(testJsonBean);
 		System.out.println(jsonObject.toString());
 		System.out.println(jsonObject.toString(4));
